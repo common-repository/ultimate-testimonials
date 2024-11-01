@@ -1,0 +1,262 @@
+/* Front end testimonial styles. */
+
+.wpgo-testimonial-container.grid {
+    padding: 0;
+    margin: 0;
+    /*-ms-box-orient: horizontal;*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    /*display: -moz-flex;*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.wpgo-testimonial-container.grid .wpgo-testimonial {
+    width: 260px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.wpgo-testimonial .testimonial-meta .tml-image-container {
+    border-color: #0095CD;
+}
+
+/* ================================
+//  -TESTIMONIAL WIDGET/SHORTCODE-
+// ================================*/
+
+/* Default TML template. */
+
+/* default/legacy tml template specific styles */
+           .wpgo-testimonial-container.default .testimonial-title {
+               display: inline-block;
+               padding-left: 15px;
+           }
+
+.wpgo-testimonial-container.default .dashicons {
+    vertical-align: initial;
+    font-size: 24px;
+}
+
+.wpgo-testimonial-container.legacy .quote {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.wpgo-testimonial-container.legacy .dashicons {
+    vertical-align: top;
+    font-size: 24px;
+}
+
+/*.wpgo-testimonial .quote,
+.wpgo-testimonial .read-more-wrapper {
+display: inline-block;
+}*/
+
+.wpgo-testimonial {
+    font-style: italic;
+    font-size:  14px;
+/*overflow:   hidden;
+margin:     5px 0 30px;
+position:   relative;
+*/
+}
+
+.wpgo-testimonial .more-link {
+    padding: 0;
+    margin: 0;
+}
+
+.wpgo-testimonial .read-more-wrapper {
+    padding-left: 5px;
+}
+
+.wpgo-testimonial .avatar {
+    margin:  0 10px 0 0;
+    padding: 0;
+    border:  0;
+}
+
+.wpgo_tml_widget .testimonial {
+    margin:  15px 0;
+    padding: 0;
+}
+
+.wpgo-testimonial .testimonial-name, .wpgo-testimonial .testimonial-company {
+    font:   bold 14px/18px Palatino, Georgia, serif;
+    margin: 0 0 3px 0;
+}
+
+.wpgo-testimonial .tml-meta-text {
+    margin-top: 10px;
+}
+
+/*.wpgo-testimonial .quote,
+.wpgo-testimonial .testimonial-meta,
+.testimonial-title {
+  padding-left: 15px;
+}*/
+
+.wpgo-testimonial .quote {
+    display:      block;
+    margin:       0;
+}
+
+.wpgo-testimonial .quote p:last-child {
+    margin-bottom: 0;
+}
+
+.wpgo-testimonial .quote p:first-child {
+    margin-top: 0;
+}
+
+.wpgo-testimonial .testimonial-meta .tml-image-container {
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.wpgo-testimonial .testimonial-meta .tml-image-container img {
+    border-radius:         50%;
+    vertical-align:        middle;
+}
+
+/*.wpgo-testimonial div.testimonial-meta img {
+    width: 45px;
+    height: 45px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 2px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }*/
+
+/* Applies to all TML templates */
+   .tml-title-link {
+       text-decoration: none;
+   }
+
+/* Default and legacy TML templates */
+
+/*.default .testimonial-meta,
+.legacy .testimonial-meta {
+  display: flex;
+  margin: 10px 0 0 0;
+}*/
+
+/* Blog style TML template */
+
+/* @todo might want to qualify these styles with a preceding TML selector */
+
+.blog .wpgo-testimonial {
+    font-style: normal;
+    font-size:  1em;
+}
+
+.tml-image-container,
+.blog .testimonial-company,
+.blog .testimonial-name,
+.blog .tml-meta-text {
+    display: inline-block;
+}
+
+.blog .testimonial-company,
+.blog .testimonial-name {
+    font-size: 1em;
+/*font-weight: normal; */
+    font-family: inherit;
+    line-height: normal;
+}
+
+.blog .quote,
+.blog .testimonial-title,
+.blog .testimonial-meta {
+    padding: 0;
+}
+
+.blog .testimonial-meta {
+    margin-top: 10px;
+}
+
+.default .testimonial-meta,
+.legacy .testimonial-meta {
+    margin-top: 10px;
+}
+
+/* TML shortcode */
+   .wpgo-testimonial-container.shortcode article:last-child,
+   .wpgo-testimonial-container.shortcode article {
+       padding: 30px 0 0 0;
+   }
+
+/*.wpgo-testimonial-container.shortcode article:first-child {
+  padding: 0;
+  }*/
+
+/* TML Star Rating Styles */
+   .wpgo-testimonial-container .star-rating .star-full:before {
+       content: "\f155";
+   }
+
+.wpgo-testimonial-container .star-rating .star-half:before {
+    content: "\f459";
+}
+
+.wpgo-testimonial-container .star-rating .star-empty:before {
+    content: "\f154";
+}
+
+.wpgo-testimonial-container .star-rating .star {
+    color: #ffd700;
+    display: inline-block;
+    font-family: dashicons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top;
+    width: 20px;
+}
+
+.wpgo-testimonial:last-child {
+    margin-bottom: 0;
+}
+
+.wpgo-testimonial .testimonial-company {
+    font-size: 12px;
+}
+
+/* make testimonial more link plain text and not a button */
+   .wpgo-testimonial .more-link {
+       display: inline;
+       padding: 0;
+       font: inherit;
+   }
+
+.wpgo-testimonial .more-link {
+    background-color: inherit;
+    color: inherit;
+}
+
+.wpgo-testimonial .more-link:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* @todo probably need this to be a color picker that has the selector editable. */
+/* @todo for now these can be editable in theme options but we could modify the multi color */
+/* picker control to be able to edit the selector. */
+.footer-container .wpgo-testimonial .testimonial-meta .tml-image-container {
+    border-color: #fff;
+}

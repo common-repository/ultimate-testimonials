@@ -1,0 +1,35 @@
+/* Front end testimonial form styles. */
+
+/*#wpgo_tml_submission_form fieldset {
+    border: 0;
+}*/
+
+#wpgo_tml_submission_form {
+    max-width: 500px;
+}
+
+.tml-submission-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.tml-submission-wrap label {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.tml-submission-wrap label + * {
+    flex: 1 0 220px;
+}
+
+#wpgo_tml_submission_form sup {
+    font-size: 1.5em;
+    top: 0.2em;
+}
+
+/* line up the form inputs better with the TML image file input field */
+.tml-submission-form input, .tml-submission-form textarea {
+    box-sizing: initial;
+}

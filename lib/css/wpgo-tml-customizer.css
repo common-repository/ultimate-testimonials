@@ -1,0 +1,14 @@
+[id*='wpgo_tml_templates'] .customize-section-description > p.description.override-tml {
+	/* having to use !important here because of the specificity of the selector. when we can go back (after wp 4.7 is released) to using the full id then we should be able to remove !important */
+	color: #f00 !important;
+	margin-top: 12px;
+	background: #f1e1e1;
+	padding: 10px;
+	border: 1px #dcb0b0 dashed;
+}
+
+[id*='wpgo_tml_templates'] .customize-section-description > p.description.override-tml a {
+	/* having to use !important here because of the specificity of the selector. when we can go back (after wp 4.7 is released) to using the full id then we should be able to remove !important */
+	color: #f00 !important;
+	text-decoration: underline;
+}

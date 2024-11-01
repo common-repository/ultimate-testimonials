@@ -1,0 +1,13 @@
+/* Styles added to post editor only. */
+
+/* TESTIMONIAL META BOX */
+
+/* Hide metabox that holds the tml checkbox we want to move, and the destination metabox */
+/*#wpgo-tml-display-options-meta, #pageparentdiv {
+  display: none;
+}*/
+
+/* Hide tml template controls temporarily */
+/*.post-attributes-label-wrapper, #page_template {
+  display: none;
+}*/
